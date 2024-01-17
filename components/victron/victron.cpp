@@ -614,6 +614,9 @@ static std::string device_type_text(int value) {
       return "SmartShunt 2000A/50mV";
     case 0xA442:
       return "Multi RS Solar 48V 6000VA 230V";
+//JiP    
+      case 0xA074:
+      return "SmartSolar MPPT 75|10";      
     default:
 //      return "Unknown";
 //JiP        
