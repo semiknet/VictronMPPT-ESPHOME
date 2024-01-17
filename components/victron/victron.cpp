@@ -615,7 +615,8 @@ static std::string device_type_text(int value) {
     case 0xA442:
       return "Multi RS Solar 48V 6000VA 230V";
     default:
-      return "Unknown";
+//      return "Unknown";
+      return value;
   }
 }
 
