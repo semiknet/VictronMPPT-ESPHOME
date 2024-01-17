@@ -616,7 +616,7 @@ static std::string device_type_text(int value) {
       return "Multi RS Solar 48V 6000VA 230V";
     default:
 //      return "Unknown";
-      return value;
+      return Convert.ToString(value);
   }
 }
 
