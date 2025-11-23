@@ -20,13 +20,13 @@ BINARY_SENSORS = [
 CONFIG_SCHEMA = cv.Schema(
     {
         cv.GenerateID(CONF_VICTRON_ID): cv.use_id(VictronComponent),
-        cv.Optional(CONF_LOAD_STATE): binary_sensor.BINARY_SENSOR_SCHEMA.extend(
+        cv.Optional(CONF_LOAD_STATE): binary_sensor.binary_sensor_schema().extend(
             {
                 cv.GenerateID(): cv.declare_id(binary_sensor.BinarySensor),
                 cv.Optional(CONF_ICON, default=ICON_EMPTY): cv.icon,
             }
         ),
-        cv.Optional(CONF_RELAY_STATE): binary_sensor.BINARY_SENSOR_SCHEMA.extend(
+        cv.Optional(CONF_RELAY_STATE): binary_sensor.binary_sensor_schema().extend(
             {
                 cv.GenerateID(): cv.declare_id(binary_sensor.BinarySensor),
                 cv.Optional(CONF_ICON, default=ICON_EMPTY): cv.icon,
